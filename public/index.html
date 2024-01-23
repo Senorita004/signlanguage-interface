@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Language Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Language Detector</h2>
+        <label class="label" for="modelSelect">Choose a Model:</label>
+        <select id="modelSelect">
+            <option value="cnn">CNN</option>
+            <option value="lstm">LSTM</option>
+            <option value="multi_lstm">Multi LSTM</option>
+            <option value="rnn">RNN</option>
+        </select>
+        <button id="enableCamera">Use Camera</button>
+        <div>
+            <div>
+                <label class="label" for="imageInput">Select Image:</label>
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+            <div id="cameraSection" >
+                <video id="cameraFeed" width="640" height="480" autoplay></video>
+                <button id="captureButton">Start Capturing</button>
+                <button id="stopCapturing">Stop Capturing</button>
+            </div>
+        </div>
+        <button id="predictButton">Predict</button>
+        
+        <img id="selectedImage" src="#" alt="Selected Image will appear here" hidden/>
+        <div id="predictionResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

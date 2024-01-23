@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #121212; /* Dark background for the whole page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff; /* White text color */
+}
+
+.container {
+  width: 80%;
+  max-width: 960px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1e1e1e; /* Dark container for contrast */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Adding some depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+#modelSelect, #imageInput, #predictButton {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff50;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+#predictButton {
+  background-color: #2979ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#predictButton:hover {
+  background-color: #5390ff;
+}
+
+#selectedImage {
+  max-width: 300px;
+  margin-top: 20px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+#predictionResult {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #adff2f;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid #ffffff50;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+#cameraSection {
+  display: none;
+  margin-left: 20px;
+}
